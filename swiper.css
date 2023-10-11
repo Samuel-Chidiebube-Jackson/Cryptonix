@@ -77,6 +77,20 @@
 }
 
 
+.label__link-dzbd7lyV{
+  display: none;
+}
+
+.tradingview-widget-copyright {
+  font-size: 13px !important;
+  line-height: 32px !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  /* @mixin sf-pro-display-font; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+  color: #9db2bd !important;
+  /* display: none; */
+}
 /*End crypto-ticker */
 
 
@@ -92,8 +106,86 @@
       background-color: white;
       position: sticky;
       margin-top: -32px;
-      /* display: none; */
     }
+
+    .logo-nav{
+      display: flex;
+    }
+
+    .logo-nav nav ul li{
+      display: inline;
+      margin: 10px;
+      padding:30px 10px;
+      /* background-color: red; */
+      
+    }
+
+    .logo-nav nav ul li:hover{
+      border-bottom:4px inset yellow;
+      /* background-color: rgb(234, 240, 240); */
+    }
+
+    .logo-nav nav ul li a{
+      color: black;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 13px;
+
+    }
+
+     /* ================Mega menu================= */
+     .megamenu{
+      display: none;
+    }
+
+    .trade-megamenu:hover .megamenu, .learn-megamenu:hover .megamenu, .more-megamenu:hover .megamenu, .futures-megamenu:hover .megamenu, .square-megamenu:hover .megamenu {
+      width: auto;
+      height: auto;
+      position: absolute;
+      box-shadow: 0px 7px 8px 0px silver;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: white;
+      margin-top: 35px;
+      gap: 30px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      cursor: pointer;
+      border-left: 5px solid yellow;
+      z-index: 1;
+    }
+
+    .megamenu h2{
+      font-size: 17px;
+      opacity: 0.7;
+    }
+
+    .menuitems{
+      margin-bottom: 15px;
+    }
+
+
+    .futures-megamenu:hover .megamenu{
+      margin-left:150px
+    }
+    
+    .square-megamenu:hover .megamenu{
+      margin-left: 300px;
+    }
+
+
+    .learn-megamenu:hover .megamenu{
+      margin-left: 200px;
+    }
+
+    .more-megamenu:hover .megamenu{
+      margin-left: 270px;
+    }
+    /*
+    /* ================End of Mega menu================= */
 
     /*================= Header Ends here====================== */
 
@@ -156,17 +248,14 @@
 
     /* Slider ends here */
 
-    .label__link-dzbd7lyV{
-      display: none;
-    }
 
-    .tradingview-widget-copyright {
-      font-size: 13px !important;
-      line-height: 32px !important;
-      text-align: center !important;
-      vertical-align: middle !important;
-      /* @mixin sf-pro-display-font; */
-      font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
-      color: #9db2bd !important;
-      /* display: none; */
-    }
+   /* ===============MEDIA UERY============ */
+@media only screen and (width < 800px){
+  #main-menu{
+    display: none;
+  }
+}
+
+
+
+   /* ===============MEDIA UERY============ */
